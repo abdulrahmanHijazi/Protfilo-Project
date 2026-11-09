@@ -1,0 +1,818 @@
+<?php
+
+/*
+ * Projects built at Vega. Descriptions and features were written from each project's code
+ * (migrations, admin resources, API routes, jobs and integrations) in D:\projects\v-2026-9-10.
+ * Altabeb and Yumzy are not in that folder, so their content comes from the CV.
+ *
+ * features: one item per line, rendered as a checklist on the project page.
+ */
+
+return [
+    [
+        'slug' => 'shamel-edu',
+        'title' => ['en' => 'Shamel Edu', 'ar' => 'منصة شامل التعليمية'],
+        'category' => ['en' => 'E-learning', 'ar' => 'تعليم إلكتروني'],
+        'short' => [
+            'en' => 'An 18-module e-learning platform with courses, live classes, exams, a store, wallet and real-time chat.',
+            'ar' => 'منصة تعليم إلكتروني من 18 وحدة تضم الدورات والحصص المباشرة والاختبارات والمتجر والمحفظة والدردشة الفورية.',
+        ],
+        'description' => [
+            'en' => 'A large modular monolith (Auth, Educational, Forum, Podcast, Product, Order, Payment, Wallet, Shipment, Coupon, Notification and more) serving a web app and mobile apps. Students enrol in recorded or live online courses, take quizzes and exams, buy digital and physical products and pay by card or from their wallet, while teachers run live groups with homework and in-class chat.',
+            'ar' => 'نظام Modular Monolith كبير (المصادقة، التعليم، المنتدى، البودكاست، المنتجات، الطلبات، الدفع، المحفظة، الشحن، الكوبونات، الإشعارات وغيرها) يخدم تطبيق ويب وتطبيقات موبايل. يسجّل الطلاب في دورات مسجلة أو مباشرة، ويقدّمون الاختبارات والامتحانات، ويشترون منتجات رقمية وفعلية ويدفعون بالبطاقة أو من المحفظة، بينما يدير المعلمون مجموعات مباشرة مع الواجبات والدردشة داخل الحصة.',
+        ],
+        'features' => [
+            'en' => [
+                'Recorded courses with Vimeo lessons, watch progress, notes and Q&A with voting',
+                'Live online course groups: current lesson, raise hand, homework, quizzes and video-call credentials (Agora/Zoom)',
+                'Quiz engine with multiple-choice, gap-fill and matching questions, timed sessions and results',
+                'Grade subscriptions, installment plans with PDF invoices, and Stripe payments',
+                'Wallet and pockets with deposits, transaction history and currency/precious-metal exchange prices',
+                'Store for digital products (PDF downloads) and physical products with variations, flash offers, coupons and shipping',
+                'Community forum, podcasts, blog and events calendar',
+                'Real-time chat and notifications with Laravel Reverb and Firebase Cloud Messaging',
+            ],
+            'ar' => [
+                'دورات مسجلة بدروس Vimeo مع تتبع المشاهدة والملاحظات والأسئلة مع التصويت',
+                'مجموعات دورات مباشرة: الدرس الحالي ورفع اليد والواجبات والاختبارات وبيانات مكالمات الفيديو (Agora/Zoom)',
+                'محرك اختبارات بأسئلة الاختيار من متعدد وملء الفراغات والتوصيل مع جلسات موقوتة ونتائج',
+                'اشتراكات الصفوف وخطط التقسيط مع فواتير PDF ومدفوعات Stripe',
+                'محفظة وجيوب مع الإيداع وسجل المعاملات وأسعار صرف العملات والمعادن',
+                'متجر للمنتجات الرقمية (تحميل PDF) والفعلية مع المتغيرات والعروض السريعة والكوبونات والشحن',
+                'منتدى مجتمعي وبودكاست ومدونة وتقويم فعاليات',
+                'دردشة وإشعارات فورية عبر Laravel Reverb وFirebase Cloud Messaging',
+            ],
+        ],
+        'techs' => ['Laravel 13', 'Laravel Modules', 'Laravel Nova', 'Filament', 'Inertia.js', 'Vue 3', 'Reverb', 'Horizon', 'Stripe', 'Vimeo', 'Agora', 'FCM', 'DomPDF'],
+        'featured' => true,
+        'accent' => '#C9A227',
+    ],
+    [
+        'slug' => 'altabeb',
+        'title' => ['en' => 'Altabeb', 'ar' => 'الطبيب'],
+        'category' => ['en' => 'Healthcare', 'ar' => 'رعاية صحية'],
+        'short' => [
+            'en' => 'Medical booking system for doctors, hospitals, pharmacies and labs, with appointments and online consultations.',
+            'ar' => 'نظام حجز طبي للأطباء والمستشفيات والصيدليات والمختبرات مع المواعيد والاستشارات عبر الإنترنت.',
+        ],
+        'description' => [
+            'en' => 'Backend and admin dashboard for a medical booking platform that connects patients with doctors, hospitals, pharmacies and laboratories, covering appointment booking and online consultations.',
+            'ar' => 'نظام خلفي ولوحة تحكم لمنصة حجز طبي تربط المرضى بالأطباء والمستشفيات والصيدليات والمختبرات، وتشمل حجز المواعيد والاستشارات عبر الإنترنت.',
+        ],
+        'features' => [
+            'en' => [
+                'Provider profiles for doctors, hospitals, pharmacies and labs',
+                'Appointment booking and online consultations',
+                'Secure REST API for the mobile apps with Sanctum authentication',
+                'Admin dashboard to manage providers, bookings and content',
+            ],
+            'ar' => [
+                'ملفات مزودي الخدمة من أطباء ومستشفيات وصيدليات ومختبرات',
+                'حجز المواعيد والاستشارات عبر الإنترنت',
+                'واجهة REST آمنة لتطبيقات الموبايل مع مصادقة Sanctum',
+                'لوحة تحكم لإدارة مزودي الخدمة والحجوزات والمحتوى',
+            ],
+        ],
+        'techs' => ['Laravel', 'Filament', 'Laravel Nova', 'Sanctum', 'MySQL'],
+        'featured' => true,
+        'accent' => '#34D399',
+    ],
+    [
+        'slug' => 'yumzy',
+        'title' => ['en' => 'Yumzy', 'ar' => 'يمزي'],
+        'category' => ['en' => 'Delivery', 'ar' => 'توصيل'],
+        'short' => [
+            'en' => 'Food and grocery delivery backend: warehouses, delivery zones, coupons, loyalty points and order tracking.',
+            'ar' => 'نظام خلفي لتوصيل الطعام والبقالة: المستودعات ومناطق التوصيل والكوبونات ونقاط الولاء وتتبع الطلبات.',
+        ],
+        'description' => [
+            'en' => 'Backend and admin dashboard for a food and grocery delivery service, covering warehouses, delivery zones, promotions and live order tracking, with heavy work offloaded to Redis queues.',
+            'ar' => 'نظام خلفي ولوحة تحكم لخدمة توصيل الطعام والبقالة، يشمل المستودعات ومناطق التوصيل والعروض وتتبع الطلبات المباشر، مع تنفيذ المهام الثقيلة عبر طوابير Redis.',
+        ],
+        'features' => [
+            'en' => [
+                'Warehouses and delivery zones',
+                'Coupons and loyalty points',
+                'Order lifecycle with live tracking',
+                'Background jobs on Redis queues',
+            ],
+            'ar' => [
+                'المستودعات ومناطق التوصيل',
+                'الكوبونات ونقاط الولاء',
+                'دورة حياة الطلب مع التتبع المباشر',
+                'مهام خلفية عبر طوابير Redis',
+            ],
+        ],
+        'techs' => ['Laravel', 'Filament', 'Sanctum', 'MySQL', 'Redis Queue'],
+        'featured' => true,
+        'accent' => '#F97316',
+    ],
+    [
+        'slug' => 'shater',
+        'title' => ['en' => 'Shater', 'ar' => 'شاطر'],
+        'category' => ['en' => 'Marketplace', 'ar' => 'سوق إلكتروني'],
+        'short' => [
+            'en' => 'Auto-parts marketplace with buyer–seller chat, company profiles, reviews, followers and SEO pages.',
+            'ar' => 'سوق قطع غيار السيارات مع دردشة بين المشتري والبائع وملفات الشركات والمراجعات والمتابعين وصفحات SEO.',
+        ],
+        'description' => [
+            'en' => 'API and Nova dashboard for a car-parts marketplace. Sellers publish listings by category, brand and model with dynamic custom fields; buyers search, filter, chat with sellers in real time and review them. Onboarding uses OTP codes sent over WhatsApp.',
+            'ar' => 'واجهة API ولوحة Nova لسوق قطع غيار السيارات. ينشر البائعون الإعلانات حسب التصنيف والماركة والموديل مع حقول مخصصة ديناميكية، ويبحث المشترون ويصفّون النتائج ويتحدثون مع البائعين فورياً ويقيّمونهم. يتم التسجيل برموز OTP عبر واتساب.',
+        ],
+        'features' => [
+            'en' => [
+                'Listings with categories, brands, models, car-part types and dynamic custom fields and feature groups',
+                'Real-time buyer–seller conversations over Laravel Reverb with unread counts',
+                'Company client profiles with map locations and related listings',
+                'Reviews for listings and sellers, followers, likes and favourites',
+                'Notifications for new listings to followers, status changes and new messages',
+                'OTP verification via WhatsApp (Green API) and Google Places address search',
+                'Configurable home-page sections, sliders and per-page SEO',
+            ],
+            'ar' => [
+                'إعلانات بالتصنيفات والماركات والموديلات وأنواع القطع وحقول مخصصة ومجموعات ميزات ديناميكية',
+                'محادثات فورية بين المشتري والبائع عبر Laravel Reverb مع عدّاد غير المقروء',
+                'ملفات الشركات مع مواقعها على الخريطة والإعلانات المرتبطة',
+                'مراجعات للإعلانات والبائعين ومتابعون وإعجابات ومفضلة',
+                'إشعارات للمتابعين بالإعلانات الجديدة وتغيّر الحالة والرسائل الجديدة',
+                'تحقق OTP عبر واتساب (Green API) وبحث العناوين عبر Google Places',
+                'أقسام صفحة رئيسية قابلة للتخصيص وسلايدر وSEO لكل صفحة',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'Sanctum', 'Reverb', 'Spatie Permission', 'Google Places', 'WhatsApp API', 'FCM'],
+        'featured' => true,
+        'accent' => '#60A5FA',
+    ],
+    [
+        'slug' => 'booking-24',
+        'title' => ['en' => 'Booking-24', 'ar' => 'بوكينغ 24'],
+        'category' => ['en' => 'Mobility & booking', 'ar' => 'نقل وحجوزات'],
+        'short' => [
+            'en' => 'Ride, airport-transfer and intercity booking API with dynamic pricing, plus tours, properties and services reservations.',
+            'ar' => 'واجهة لحجز الرحلات ونقل المطارات والرحلات بين المدن بتسعير ديناميكي، إضافة إلى حجز الجولات والعقارات والخدمات.',
+        ],
+        'description' => [
+            'en' => 'A multi-service booking platform. Customers book city rides, airport transfers and state-to-state trips (instant or scheduled), and also reserve tours, properties and services published by providers. A Filament dashboard manages drivers, shifts, cars, pricing and complaints, while queued jobs handle driver matching and notifications.',
+            'ar' => 'منصة حجوزات متعددة الخدمات. يحجز العملاء رحلات داخل المدينة ونقل المطارات ورحلات بين المحافظات (فورية أو مجدولة)، كما يحجزون الجولات والعقارات والخدمات التي ينشرها المزودون. تدير لوحة Filament السائقين والورديات والسيارات والتسعير والشكاوى، بينما تتولى مهام الطوابير مطابقة السائقين والإشعارات.',
+        ],
+        'features' => [
+            'en' => [
+                'City, airport and state-to-state trips with available-ride lookup, pricing per car category and coupons',
+                'Nearby-driver search, driver suggestions and automatic fallback when a driver declines',
+                'Trip lifecycle: accept, arrive, start, finish, cancel, change destination with route-change log',
+                'Scheduled trips with reminders, late-driver checks and driver daily-distance calculation',
+                'Tours, property and service reservations with custom fields and feature groups',
+                'Ratings, complaints, reports, SOS alerts and trip QR codes / invoices',
+                'Google Maps directions and place search; push notifications via FCM; jobs on Horizon',
+            ],
+            'ar' => [
+                'رحلات داخل المدينة وللمطارات وبين المحافظات مع البحث عن الرحلات المتاحة والتسعير حسب فئة السيارة والكوبونات',
+                'البحث عن السائقين القريبين واقتراحهم والانتقال التلقائي لسائق آخر عند الرفض',
+                'دورة حياة الرحلة: قبول ووصول وبدء وإنهاء وإلغاء وتغيير الوجهة مع سجل تغيير المسار',
+                'رحلات مجدولة مع تذكيرات وفحص تأخر السائق وحساب المسافة اليومية للسائق',
+                'حجز الجولات والعقارات والخدمات مع حقول مخصصة ومجموعات ميزات',
+                'تقييمات وشكاوى وبلاغات وتنبيهات SOS ورموز QR وفواتير للرحلات',
+                'اتجاهات Google Maps والبحث عن الأماكن، وإشعارات FCM، ومهام عبر Horizon',
+            ],
+        ],
+        'techs' => ['Laravel 12', 'Filament 3', 'Sanctum', 'Horizon', 'Google Maps', 'FCM', 'Spatie Permission', 'MySQL'],
+        'featured' => true,
+        'accent' => '#A78BFA',
+    ],
+    [
+        'slug' => 'electro-taxi',
+        'title' => ['en' => 'Electro Taxi', 'ar' => 'إلكترو تاكسي'],
+        'category' => ['en' => 'Mobility', 'ar' => 'نقل'],
+        'short' => [
+            'en' => 'Ride-hailing backend with live driver matching, scheduled and airport trips, SOS alerts and driver shift tracking.',
+            'ar' => 'نظام خلفي لطلب سيارات الأجرة مع مطابقة السائقين المباشرة والرحلات المجدولة ورحلات المطار وتنبيهات SOS وتتبع ورديات السائقين.',
+        ],
+        'description' => [
+            'en' => 'Backend for a taxi app with separate customer and driver flows. Trips are priced by car category, state rate or airport tariff, matched to nearby drivers by background jobs, and tracked end-to-end with status updates and route logs. The Filament dashboard covers drivers, cars, shifts, trips, coupons and complaints.',
+            'ar' => 'نظام خلفي لتطبيق تاكسي بمسارين للعميل والسائق. تُسعّر الرحلات حسب فئة السيارة أو تعرفة المحافظة أو المطار، وتطابقها مهام خلفية مع السائقين القريبين، وتُتابع حتى النهاية بتحديثات الحالة وسجل المسار. تغطي لوحة Filament السائقين والسيارات والورديات والرحلات والكوبونات والشكاوى.',
+        ],
+        'features' => [
+            'en' => [
+                'OTP login and registration for customers and drivers',
+                'Instant, scheduled, airport and state-to-state trips with pricing per category',
+                'Nearby-driver search, trip suggestions and re-assignment when drivers decline',
+                'Driver live locations, shifts and daily distance calculation (batched jobs)',
+                'Customer notifications for acceptance, arrival, start and finish; driver and client rating recalculation',
+                'SOS alerts, complaints, coupons and Excel exports',
+            ],
+            'ar' => [
+                'تسجيل ودخول بـ OTP للعملاء والسائقين',
+                'رحلات فورية ومجدولة وللمطارات وبين المحافظات مع تسعير حسب الفئة',
+                'البحث عن السائقين القريبين واقتراح الرحلات وإعادة الإسناد عند الرفض',
+                'مواقع السائقين المباشرة والورديات وحساب المسافة اليومية (مهام مجمعة)',
+                'إشعارات للعميل بالقبول والوصول والبدء والإنهاء وإعادة حساب تقييم السائق والعميل',
+                'تنبيهات SOS والشكاوى والكوبونات والتصدير إلى Excel',
+            ],
+        ],
+        'techs' => ['Laravel 12', 'Filament 3', 'Sanctum', 'Horizon', 'Google Maps', 'FCM', 'Excel'],
+        'featured' => true,
+        'accent' => '#22D3EE',
+    ],
+    [
+        'slug' => 'dealohub',
+        'title' => ['en' => 'DealoHub', 'ar' => 'ديلو هب'],
+        'category' => ['en' => 'Marketplace', 'ar' => 'سوق إلكتروني'],
+        'short' => [
+            'en' => 'Classified-listings API with dynamic custom fields, real-time chat, company profiles, reviews and followers.',
+            'ar' => 'واجهة API لسوق إعلانات مبوبة مع حقول مخصصة ديناميكية ودردشة فورية وملفات الشركات والمراجعات والمتابعين.',
+        ],
+        'description' => [
+            'en' => 'API and Filament 4 dashboard for a classified-ads marketplace. Listings use category-specific custom fields and features; users chat in real time, follow companies, like and save listings, and leave reviews. Admins manage the catalogue, home-page sections and imports/exports.',
+            'ar' => 'واجهة API ولوحة Filament 4 لسوق إعلانات مبوبة. تستخدم الإعلانات حقولاً وميزات خاصة بكل تصنيف، ويتحدث المستخدمون فورياً ويتابعون الشركات ويعجبون بالإعلانات ويحفظونها ويكتبون المراجعات. يدير المشرفون الكتالوج وأقسام الصفحة الرئيسية والاستيراد والتصدير.',
+        ],
+        'features' => [
+            'en' => [
+                'Listings with types, categories, brands/models and dynamic custom fields',
+                'Real-time conversations over Reverb with read receipts',
+                'Company profiles with working days, locations and related listings',
+                'Reviews, followers, likes and favourites with notifications',
+                'Media uploads, currency conversion and Google Places lookup',
+                'Excel imports/exports from the Filament dashboard',
+            ],
+            'ar' => [
+                'إعلانات بالأنواع والتصنيفات والماركات والموديلات وحقول مخصصة ديناميكية',
+                'محادثات فورية عبر Reverb مع إشعارات القراءة',
+                'ملفات الشركات مع أيام العمل والمواقع والإعلانات المرتبطة',
+                'مراجعات ومتابعون وإعجابات ومفضلة مع الإشعارات',
+                'رفع الوسائط وتحويل العملات والبحث في Google Places',
+                'استيراد وتصدير Excel من لوحة Filament',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Filament 4', 'Reverb', 'Sanctum', 'Excel', 'Google Places'],
+        'featured' => false,
+        'accent' => '#F472B6',
+    ],
+    [
+        'slug' => 'e-pharmacy',
+        'title' => ['en' => 'E-Pharmacy', 'ar' => 'الصيدلية الإلكترونية'],
+        'category' => ['en' => 'Healthcare e-commerce', 'ar' => 'تجارة صحية'],
+        'short' => [
+            'en' => 'Modular online pharmacy with a multi-vendor catalogue, cart and checkout, wallet, shipping and Stripe payments.',
+            'ar' => 'صيدلية إلكترونية بنظام الوحدات مع كتالوج متعدد البائعين وسلة ودفع ومحفظة وشحن ومدفوعات Stripe.',
+        ],
+        'description' => [
+            'en' => 'A modular e-commerce backend tailored to pharmacies. Products support attributes and variations, vendors have stores and delivery settings, and customers check out with cards or wallet balance. Promotions include discounts, flash offers, gift and cashback coupons and golden groups.',
+            'ar' => 'نظام تجارة إلكترونية بنظام الوحدات مخصص للصيدليات. تدعم المنتجات الخصائص والمتغيرات، ولكل بائع متجر وإعدادات توصيل، ويدفع العملاء بالبطاقة أو من رصيد المحفظة. تشمل العروض الخصومات والعروض السريعة وكوبونات الهدايا والاسترداد النقدي والمجموعات الذهبية.',
+        ],
+        'features' => [
+            'en' => [
+                'Products with attributes, variations, custom fields, reviews, similar and related products',
+                'Multi-vendor stores with delivery cities, distance-based delivery and order splitting per vendor',
+                'Cart, checkout, shipping companies and shipping times',
+                'Wallet with deposits, transactions and currency exchange',
+                'Discounts, flash offers, gift and cashback coupons, golden groups',
+                'Social login, Stripe payments, PDF invoices and real-time notifications',
+            ],
+            'ar' => [
+                'منتجات بالخصائص والمتغيرات والحقول المخصصة والمراجعات والمنتجات المشابهة والمرتبطة',
+                'متاجر متعددة البائعين مع مدن التوصيل والتوصيل حسب المسافة وتقسيم الطلب لكل بائع',
+                'السلة والدفع وشركات الشحن وأوقات الشحن',
+                'محفظة مع الإيداع والمعاملات وتحويل العملات',
+                'خصومات وعروض سريعة وكوبونات هدايا واسترداد نقدي ومجموعات ذهبية',
+                'تسجيل دخول اجتماعي ومدفوعات Stripe وفواتير PDF وإشعارات فورية',
+            ],
+        ],
+        'techs' => ['Laravel 10', 'Laravel Modules', 'Laravel Nova', 'Stripe', 'Reverb', 'Firebase', 'Horizon', 'DomPDF'],
+        'featured' => false,
+        'accent' => '#34D399',
+    ],
+    [
+        'slug' => 'dawaei',
+        'title' => ['en' => 'Dawaei', 'ar' => 'دوائي'],
+        'category' => ['en' => 'Healthcare', 'ar' => 'رعاية صحية'],
+        'short' => [
+            'en' => 'Digital prescriptions: doctors issue prescriptions from reusable templates and patients find the medicines at pharmacies.',
+            'ar' => 'وصفات طبية رقمية: يصدر الأطباء الوصفات من قوالب قابلة لإعادة الاستخدام ويجد المرضى الأدوية في الصيدليات.',
+        ],
+        'description' => [
+            'en' => 'API and Filament 4 dashboard connecting doctors, patients, pharmacies and pharmacists. Doctors build prescriptions from a medicine catalogue with dosage instructions, save them as templates and issue them to patients; pharmacies publish working hours.',
+            'ar' => 'واجهة API ولوحة Filament 4 تربط الأطباء والمرضى والصيدليات والصيادلة. يبني الأطباء الوصفات من كتالوج الأدوية مع تعليمات الجرعات، ويحفظونها كقوالب ويصدرونها للمرضى، وتنشر الصيدليات أوقات عملها.',
+        ],
+        'features' => [
+            'en' => [
+                'Roles for doctors, patients, pharmacists and admins with OTP account verification',
+                'Prescriptions with medicines, times per day, when-to-take and duration, issued to patients',
+                'Reusable prescription templates that doctors can apply to new prescriptions',
+                'Medicine catalogue with brands, categories, attributes and variations; doctor favourites',
+                'Pharmacies with working days and hours',
+            ],
+            'ar' => [
+                'أدوار للأطباء والمرضى والصيادلة والمشرفين مع تحقق الحساب بـ OTP',
+                'وصفات بالأدوية وعدد المرات يومياً ووقت التناول والمدة، تُصدر للمرضى',
+                'قوالب وصفات قابلة لإعادة الاستخدام يطبقها الطبيب على وصفات جديدة',
+                'كتالوج أدوية بالماركات والتصنيفات والخصائص والمتغيرات مع مفضلة الطبيب',
+                'صيدليات مع أيام وساعات العمل',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Filament 4', 'Sanctum', 'Excel', 'MySQL'],
+        'featured' => false,
+        'accent' => '#10B981',
+    ],
+    [
+        'slug' => 'almasar-platform',
+        'title' => ['en' => 'Almasar Platform', 'ar' => 'منصة المسار'],
+        'category' => ['en' => 'E-learning & community', 'ar' => 'تعليم ومجتمع'],
+        'short' => [
+            'en' => 'Learning and community platform with courses, exams, forum, podcasts, events, job board and a store.',
+            'ar' => 'منصة تعليم ومجتمع مع الدورات والامتحانات والمنتدى والبودكاست والفعاليات ولوحة الوظائف والمتجر.',
+        ],
+        'description' => [
+            'en' => 'Built on the same modular core as Shamel Edu, extended with community features: users can become teachers, publish podcasts and events, register companies and post job opportunities, alongside courses, quizzes, a digital and physical store and a wallet.',
+            'ar' => 'مبنية على نفس النواة المعيارية لمنصة شامل، مع ميزات مجتمعية إضافية: يمكن للمستخدم أن يصبح معلماً، وينشر البودكاست والفعاليات، ويسجّل شركته وينشر فرص العمل، إلى جانب الدورات والاختبارات والمتجر الرقمي والفعلي والمحفظة.',
+        ],
+        'features' => [
+            'en' => [
+                'Courses, grade subscriptions, quizzes and exams',
+                'Teacher onboarding: users can apply to become teachers',
+                'Forum posts, podcasts, blog and events created by users',
+                'Company profiles and job opportunities',
+                'Digital products, physical store, coupons and flash offers',
+                'Wallet, Stripe payments and Firebase notifications',
+            ],
+            'ar' => [
+                'الدورات واشتراكات الصفوف والاختبارات والامتحانات',
+                'انضمام المعلمين: يمكن للمستخدم التقدّم ليصبح معلماً',
+                'منشورات المنتدى والبودكاست والمدونة والفعاليات التي ينشئها المستخدمون',
+                'ملفات الشركات وفرص العمل',
+                'منتجات رقمية ومتجر فعلي وكوبونات وعروض سريعة',
+                'محفظة ومدفوعات Stripe وإشعارات Firebase',
+            ],
+        ],
+        'techs' => ['Laravel 10', 'Laravel Modules', 'Laravel Nova', 'Stripe', 'Firebase', 'Pusher', 'Horizon'],
+        'featured' => false,
+        'accent' => '#FBBF24',
+    ],
+    [
+        'slug' => 'roomcm',
+        'title' => ['en' => 'Roomcm', 'ar' => 'رومكم'],
+        'category' => ['en' => 'E-commerce', 'ar' => 'تجارة إلكترونية'],
+        'short' => [
+            'en' => 'Furniture and interior-design store with mood boards, room product groups and material filters.',
+            'ar' => 'متجر أثاث وتصميم داخلي مع لوحات الإلهام ومجموعات منتجات الغرف وفلاتر المواد.',
+        ],
+        'description' => [
+            'en' => 'Modular e-commerce backend for interior design. Besides the usual catalogue, cart, wallet and shipping, customers browse ready-made product groups (complete rooms), preview swapping a product inside a group, and filter by materials and mood-board attributes.',
+            'ar' => 'نظام تجارة إلكترونية معياري للتصميم الداخلي. إضافة إلى الكتالوج والسلة والمحفظة والشحن، يتصفح العملاء مجموعات منتجات جاهزة (غرف كاملة)، ويعاينون استبدال منتج داخل المجموعة، ويصفّون حسب المواد وخصائص لوحات الإلهام.',
+        ],
+        'features' => [
+            'en' => [
+                'Product groups (complete rooms) with preview-replace of individual products',
+                'Mood boards linking categories to attributes, values and products',
+                'Materials catalogue and material-based filters',
+                'Cart (including add-multiple), checkout, shipping and wallet',
+                'Services pages, discounts, coupons and golden groups',
+            ],
+            'ar' => [
+                'مجموعات منتجات (غرف كاملة) مع معاينة استبدال منتج منفرد',
+                'لوحات إلهام تربط التصنيفات بالخصائص والقيم والمنتجات',
+                'كتالوج المواد والفلترة حسب المادة',
+                'السلة (مع إضافة عدة منتجات) والدفع والشحن والمحفظة',
+                'صفحات الخدمات والخصومات والكوبونات والمجموعات الذهبية',
+            ],
+        ],
+        'techs' => ['Laravel 10', 'Laravel Modules', 'Laravel Nova', 'Filament', 'Stripe', 'Firebase'],
+        'featured' => false,
+        'accent' => '#FB923C',
+    ],
+    [
+        'slug' => 'real-estate-system',
+        'title' => ['en' => 'Real Estate System', 'ar' => 'نظام العقارات'],
+        'category' => ['en' => 'Real estate', 'ar' => 'عقارات'],
+        'short' => [
+            'en' => 'Real-estate website backend with projects, units, developers, leads and Property Finder import.',
+            'ar' => 'نظام خلفي لموقع عقاري مع المشاريع والوحدات والمطورين والعملاء المحتملين والاستيراد من Property Finder.',
+        ],
+        'description' => [
+            'en' => 'Modular backend and page builder for a real-estate agency. It manages off-plan projects with payment plans and timelines, ready properties, developers and community guides, captures leads and appointment bookings, and imports listings from external sources through queued batch jobs.',
+            'ar' => 'نظام خلفي معياري ومنشئ صفحات لوكالة عقارية. يدير المشاريع على المخطط مع خطط الدفع والجداول الزمنية، والعقارات الجاهزة، والمطورين وأدلة المجتمعات، ويجمع العملاء المحتملين وحجوزات المواعيد، ويستورد الإعلانات من مصادر خارجية عبر مهام مجمعة في الطوابير.',
+        ],
+        'features' => [
+            'en' => [
+                'Projects with payment plans, timelines, facilities, nearby sites and related projects',
+                'Properties, developers, most-popular areas and community guides',
+                'Lead capture, landing-page forms, booked appointments and exchange forms',
+                'Property Finder API import and project-ID sync via batched jobs',
+                'Dynamic pages and sections, blog, careers with employment applications',
+            ],
+            'ar' => [
+                'مشاريع مع خطط الدفع والجداول الزمنية والمرافق والمواقع القريبة والمشاريع المرتبطة',
+                'العقارات والمطورون والمناطق الأكثر طلباً وأدلة المجتمعات',
+                'جمع العملاء المحتملين ونماذج صفحات الهبوط وحجز المواعيد',
+                'الاستيراد من Property Finder API ومزامنة معرفات المشاريع عبر مهام مجمعة',
+                'صفحات وأقسام ديناميكية ومدونة ووظائف مع طلبات التوظيف',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Modules', 'Laravel Nova', 'Horizon', 'Property Finder API'],
+        'featured' => false,
+        'accent' => '#94A3B8',
+    ],
+    [
+        'slug' => '77-auto',
+        'title' => ['en' => '77 Auto', 'ar' => '77 أوتو'],
+        'category' => ['en' => 'Automotive & EV', 'ar' => 'سيارات وشحن كهربائي'],
+        'short' => [
+            'en' => 'EV charging and car-care app: charging stations map, charge-slot booking and car maintenance reminders.',
+            'ar' => 'تطبيق شحن السيارات الكهربائية والعناية بالسيارة: خريطة محطات الشحن وحجز مواعيد الشحن وتذكيرات الصيانة.',
+        ],
+        'description' => [
+            'en' => 'API and Nova dashboard for an EV services company. Customers register their cars, find charging stations on a map, request charging at a chosen time and duration, and set repeating maintenance reminders. Agents manage their own cars and charge requests.',
+            'ar' => 'واجهة API ولوحة Nova لشركة خدمات السيارات الكهربائية. يسجّل العملاء سياراتهم ويجدون محطات الشحن على الخريطة ويطلبون الشحن في وقت ومدة يختارونها، ويضبطون تذكيرات صيانة متكررة. ويدير الوكلاء سياراتهم وطلبات الشحن.',
+        ],
+        'features' => [
+            'en' => [
+                'Charging stations by type with map view and Google Places lookup',
+                'Charge requests with time slots, durations and conflict detection',
+                'Customer cars with repeating reminders (by day, week or month)',
+                'Agents with their own cars; brands, categories and advertisements',
+                'OTP login and registration, addresses by state and city',
+            ],
+            'ar' => [
+                'محطات شحن حسب النوع مع عرض الخريطة والبحث عبر Google Places',
+                'طلبات شحن بمواعيد ومدد مع كشف التعارض',
+                'سيارات العملاء مع تذكيرات متكررة (يومية أو أسبوعية أو شهرية)',
+                'وكلاء بسياراتهم الخاصة، والماركات والتصنيفات والإعلانات',
+                'تسجيل ودخول بـ OTP وعناوين حسب المحافظة والمدينة',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'Sanctum', 'Google Maps', 'MySQL'],
+        'featured' => false,
+        'accent' => '#4ADE80',
+    ],
+    [
+        'slug' => 'on-point',
+        'title' => ['en' => 'On Point', 'ar' => 'أون بوينت'],
+        'category' => ['en' => 'Services marketplace', 'ar' => 'سوق خدمات'],
+        'short' => [
+            'en' => 'Marketplace for booking home-service experts, with offers, a full booking lifecycle, payments, payouts and support tickets.',
+            'ar' => 'سوق لحجز خبراء الخدمات المنزلية مع العروض ودورة حياة الحجز الكاملة والمدفوعات والتحويلات وتذاكر الدعم.',
+        ],
+        'description' => [
+            'en' => 'API and Filament dashboard connecting clients with service experts. Experts join through an approval request, list services and working hours, send offers to customer requests and move bookings from pending through payment, start and completion; the platform tracks payments, payouts and expert ratings.',
+            'ar' => 'واجهة API ولوحة Filament تربط العملاء بخبراء الخدمات. ينضم الخبراء عبر طلب موافقة، ويعرضون خدماتهم وساعات عملهم، ويرسلون عروضاً لطلبات العملاء، وينقلون الحجوزات من الانتظار إلى الدفع والبدء والإنجاز، بينما تتابع المنصة المدفوعات والتحويلات وتقييمات الخبراء.',
+        ],
+        'features' => [
+            'en' => [
+                'Expert onboarding requests, profiles, galleries, social links and working hours',
+                'Customer requests with expert offers; bookings accepted, rejected, started and completed',
+                'Dashboard views per booking state: pending, payment-pending, approved, in progress, completed, cancelled',
+                'Payments, pending and completed payouts, finance report and coupons',
+                'Ratings and feedback, favourites, support tickets with replies',
+            ],
+            'ar' => [
+                'طلبات انضمام الخبراء وملفاتهم ومعارض أعمالهم وروابطهم وساعات عملهم',
+                'طلبات العملاء مع عروض الخبراء، وحجوزات تُقبل وتُرفض وتبدأ وتُنجز',
+                'شاشات في اللوحة لكل حالة حجز: انتظار، بانتظار الدفع، مقبول، قيد التنفيذ، مكتمل، ملغى',
+                'المدفوعات والتحويلات المعلقة والمكتملة والتقرير المالي والكوبونات',
+                'التقييمات والملاحظات والمفضلة وتذاكر الدعم مع الردود',
+            ],
+        ],
+        'techs' => ['Laravel 12', 'Filament 3', 'Sanctum', 'Excel', 'MySQL'],
+        'featured' => false,
+        'accent' => '#E879F9',
+    ],
+    [
+        'slug' => 'education-accounting-system',
+        'title' => ['en' => 'Education Accounting System', 'ar' => 'نظام المحاسبة التعليمي'],
+        'category' => ['en' => 'Accounting / ERP', 'ar' => 'محاسبة'],
+        'short' => [
+            'en' => 'Accounting and student-tracking system for a study-abroad agency: universities, scholarships, invoices and expenses.',
+            'ar' => 'نظام محاسبة ومتابعة طلاب لوكالة دراسة في الخارج: الجامعات والمنح والفواتير والمصاريف.',
+        ],
+        'description' => [
+            'en' => 'Internal Nova application for an education agency that places students in universities. It tracks university and scholarship students through their statuses, records agents, suppliers and sources, and handles invoices, received amounts, payments, costs and expenses with charts and an audit log.',
+            'ar' => 'تطبيق Nova داخلي لوكالة تعليمية تسجّل الطلاب في الجامعات. يتابع طلاب الجامعات والمنح عبر حالاتهم، ويسجل الوكلاء والموردين والمصادر، ويدير الفواتير والمبالغ المستلمة والمدفوعات والتكاليف والمصاريف مع رسوم بيانية وسجل للعمليات.',
+        ],
+        'features' => [
+            'en' => [
+                'University and scholarship students with specializations, academic stages and status history',
+                'Universities, agents, suppliers, employees and client sources',
+                'Invoices with services, amounts received, payments, costs and expense types',
+                'Multi-currency amounts and dashboard charts',
+                'Audit log of create/update/delete operations',
+            ],
+            'ar' => [
+                'طلاب الجامعات والمنح مع التخصصات والمراحل الدراسية وسجل الحالات',
+                'الجامعات والوكلاء والموردون والموظفون ومصادر العملاء',
+                'فواتير بالخدمات والمبالغ المستلمة والمدفوعات والتكاليف وأنواع المصاريف',
+                'مبالغ متعددة العملات ورسوم بيانية في اللوحة',
+                'سجل لعمليات الإنشاء والتعديل والحذف',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'MySQL'],
+        'featured' => false,
+        'accent' => '#38BDF8',
+    ],
+    [
+        'slug' => 'scouts-syria',
+        'title' => ['en' => 'Scouts of Syria', 'ar' => 'كشاف سوريا'],
+        'category' => ['en' => 'Organization management', 'ar' => 'إدارة منظمات'],
+        'short' => [
+            'en' => 'Membership and organisation system for the scout movement: groups, leaders, badges, medals and registration forms.',
+            'ar' => 'نظام عضوية وإدارة للحركة الكشفية: الفرق والقادة والشارات والأوسمة ونماذج التسجيل.',
+        ],
+        'description' => [
+            'en' => 'Nova application that models the scout movement hierarchy, from governorates and headquarters to scout groups, sub-groups and units. It manages individuals and leaders with their qualifications, handles badge requests and awards, medals and registered activities, and accepts public registration forms with file uploads.',
+            'ar' => 'تطبيق Nova يمثّل هيكل الحركة الكشفية من المحافظات والمقرات إلى الفرق والفرق الفرعية والوحدات. يدير الأفراد والقادة ومؤهلاتهم، ويعالج طلبات الشارات ومنحها والأوسمة والأنشطة المسجلة، ويستقبل نماذج التسجيل العامة مع رفع الملفات.',
+        ],
+        'features' => [
+            'en' => [
+                'Hierarchy of governorates, headquarters, movement groups, scout groups, sub-groups and stages',
+                'Individuals and leaders with leadership and scouting qualifications',
+                'Badge requests, awarded badges and scouting medals',
+                'Group activities and registered scouting activities with charts',
+                'Public registration forms with temporary file uploads and cleanup job',
+            ],
+            'ar' => [
+                'هيكل المحافظات والمقرات والمجموعات والفرق والفرق الفرعية والمراحل',
+                'الأفراد والقادة مع المؤهلات القيادية والكشفية',
+                'طلبات الشارات والشارات الممنوحة والأوسمة الكشفية',
+                'أنشطة الفرق والأنشطة الكشفية المسجلة مع رسوم بيانية',
+                'نماذج تسجيل عامة مع رفع ملفات مؤقتة ومهمة لتنظيفها',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'Sanctum', 'MySQL'],
+        'featured' => false,
+        'accent' => '#84CC16',
+    ],
+    [
+        'slug' => 'nexen-study',
+        'title' => ['en' => 'Nexen Study', 'ar' => 'نيكسن ستدي'],
+        'category' => ['en' => 'Study planner', 'ar' => 'تخطيط دراسي'],
+        'short' => [
+            'en' => 'Study-planner API: students set up their academic profile, then plan classes, exams and repeating tasks.',
+            'ar' => 'واجهة لتخطيط الدراسة: يُعدّ الطالب ملفه الأكاديمي ثم يخطط للحصص والامتحانات والمهام المتكررة.',
+        ],
+        'description' => [
+            'en' => 'API and Nova dashboard for a student planner app. After Google sign-in or OTP verification, students choose their academic year, level and specialization, then manage weekly classes, exams and tasks; repeating schedules are expanded and cleaned up by queued jobs.',
+            'ar' => 'واجهة API ولوحة Nova لتطبيق تخطيط دراسي. بعد الدخول بحساب Google أو التحقق بـ OTP يختار الطالب سنته ومستواه وتخصصه، ثم يدير الحصص الأسبوعية والامتحانات والمهام، وتتولى مهام الطوابير توليد الجداول المتكررة وتنظيفها.',
+        ],
+        'features' => [
+            'en' => [
+                'Google sign-in and OTP account verification',
+                'Account setup with academic years, levels, specializations and subjects',
+                'Weekly educational classes by day, exams and typed tasks',
+                'Repeating schedules generated and removed by background jobs',
+                'Excel exports for admins',
+            ],
+            'ar' => [
+                'الدخول بحساب Google والتحقق من الحساب بـ OTP',
+                'إعداد الحساب بالسنوات والمستويات والتخصصات والمواد',
+                'حصص أسبوعية حسب اليوم وامتحانات ومهام مصنفة',
+                'جداول متكررة تُولّد وتُحذف عبر مهام خلفية',
+                'تصدير Excel للمشرفين',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'Sanctum', 'Google OAuth', 'Excel'],
+        'featured' => false,
+        'accent' => '#818CF8',
+    ],
+    [
+        'slug' => 'sankari-gold',
+        'title' => ['en' => 'Sankari Gold', 'ar' => 'سنكري للذهب'],
+        'category' => ['en' => 'Fintech', 'ar' => 'تقنية مالية'],
+        'short' => [
+            'en' => 'Gold and currency dashboard with client wallets, agents and city-specific buy/sell price margins.',
+            'ar' => 'لوحة للذهب والعملات مع محافظ العملاء والوكلاء وهوامش أسعار الشراء والبيع حسب المدينة.',
+        ],
+        'description' => [
+            'en' => 'Filament 4 dashboard for a gold trading business. Admins and agents manage clients by category and status, hold balances in multi-currency wallets (fiat and metals), and schedule buy/sell price increases per currency for Damascus and Aleppo, as fixed amounts or percentages within a time window.',
+            'ar' => 'لوحة Filament 4 لشركة تجارة ذهب. يدير المشرفون والوكلاء العملاء حسب التصنيف والحالة، ويحفظون أرصدتهم في محافظ متعددة العملات (نقدية ومعادن)، ويجدولون زيادات أسعار الشراء والبيع لكل عملة في دمشق وحلب، كقيمة ثابتة أو نسبة ضمن فترة زمنية.',
+        ],
+        'features' => [
+            'en' => [
+                'Roles for admins, agents and clients',
+                'Clients with categories and active / inactive / blocked status',
+                'Multi-currency wallets for fiat currencies and metals',
+                'Time-windowed buy/sell increases per city, fixed or percentage',
+            ],
+            'ar' => [
+                'أدوار للمشرفين والوكلاء والعملاء',
+                'عملاء بتصنيفات وحالات نشط / غير نشط / محظور',
+                'محافظ متعددة العملات للعملات النقدية والمعادن',
+                'زيادات شراء وبيع لكل مدينة ضمن فترة زمنية، ثابتة أو نسبة',
+            ],
+        ],
+        'techs' => ['Laravel 12', 'Filament 4', 'MySQL'],
+        'featured' => false,
+        'accent' => '#EAB308',
+    ],
+    [
+        'slug' => 'pixel',
+        'title' => ['en' => 'Pixel Agency', 'ar' => 'بيكسل'],
+        'category' => ['en' => 'Agency management', 'ar' => 'إدارة وكالات'],
+        'short' => [
+            'en' => 'Internal tool for a marketing agency: clients, celebrities, campaigns, posts, project teams and employee rating.',
+            'ar' => 'أداة داخلية لوكالة تسويق: العملاء والمشاهير والحملات والمنشورات وفرق المشاريع وتقييم الموظفين.',
+        ],
+        'description' => [
+            'en' => 'Nova application where a marketing agency manages clients and influencers with their social platforms, runs campaigns and posts through work cycles and priorities, assigns project teams and licences, and rates employees on a dedicated rating screen.',
+            'ar' => 'تطبيق Nova تدير فيه وكالة التسويق العملاء والمؤثرين ومنصاتهم الاجتماعية، وتنفذ الحملات والمنشورات عبر دورات عمل وأولويات، وتسند فرق المشاريع والتراخيص، وتقيّم الموظفين عبر شاشة تقييم مخصصة.',
+        ],
+        'features' => [
+            'en' => [
+                'Clients and celebrities linked to social media types',
+                'Campaigns with statuses and typed posts',
+                'Projects with teams, licences, work cycles and priorities',
+                'Employees, job titles and a rating screen',
+            ],
+            'ar' => [
+                'العملاء والمشاهير مرتبطون بأنواع المنصات الاجتماعية',
+                'حملات بحالات ومنشورات مصنفة',
+                'مشاريع مع الفرق والتراخيص ودورات العمل والأولويات',
+                'الموظفون والمسميات الوظيفية وشاشة التقييم',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'MySQL'],
+        'featured' => false,
+        'accent' => '#F43F5E',
+    ],
+    [
+        'slug' => 'hfs',
+        'title' => ['en' => 'HFS', 'ar' => 'HFS'],
+        'category' => ['en' => 'CMS & awards', 'ar' => 'إدارة محتوى وجوائز'],
+        'short' => [
+            'en' => 'Foundation website CMS with competitions, quizzes, events and the Huraymila Award application workflow.',
+            'ar' => 'نظام محتوى لموقع مؤسسة مع المسابقات والاختبارات والفعاليات وسير عمل التقديم على جائزة حريملاء.',
+        ],
+        'description' => [
+            'en' => 'Headless CMS and member API for a foundation website. Editors compose pages from configurable sections; members register with OTP, join competitions and events, take quizzes and apply for the Huraymila Award, whose applications are reviewed through accept, reject and winner forms in Nova.',
+            'ar' => 'نظام محتوى بدون واجهة وواجهة API للأعضاء لموقع مؤسسة. يركّب المحررون الصفحات من أقسام قابلة للتخصيص، ويسجّل الأعضاء بـ OTP ويشاركون في المسابقات والفعاليات ويقدّمون الاختبارات ويتقدمون لجائزة حريملاء، وتُراجع الطلبات عبر نماذج القبول والرفض والفوز في Nova.',
+        ],
+        'features' => [
+            'en' => [
+                'Page builder with section types for services, projects, team, partners, branches, careers, videos and more',
+                'Competitions and events with member registration ("my competitions", "my events")',
+                'Quizzes with questions and choices',
+                'Huraymila Award applications with accept / reject / winner review forms',
+                'Blog, careers, FAQ, newsletter, menus, legal policies and SEO',
+            ],
+            'ar' => [
+                'منشئ صفحات بأنواع أقسام للخدمات والمشاريع والفريق والشركاء والفروع والوظائف والفيديوهات وغيرها',
+                'مسابقات وفعاليات مع تسجيل الأعضاء («مسابقاتي» و«فعالياتي»)',
+                'اختبارات بأسئلة وخيارات',
+                'طلبات جائزة حريملاء مع نماذج مراجعة للقبول والرفض والفوز',
+                'مدونة ووظائف وأسئلة شائعة ونشرة بريدية وقوائم وسياسات قانونية وSEO',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'Sanctum', 'Spatie Permission'],
+        'featured' => false,
+        'accent' => '#2DD4BF',
+    ],
+    [
+        'slug' => 'alkhawarizmi-org',
+        'title' => ['en' => 'Alkhawarizmi Org', 'ar' => 'منظمة الخوارزمي'],
+        'category' => ['en' => 'CMS', 'ar' => 'إدارة محتوى'],
+        'short' => [
+            'en' => 'Headless CMS for an organisation website: page builder, blog with tags and views, projects, team and careers.',
+            'ar' => 'نظام محتوى بدون واجهة لموقع منظمة: منشئ صفحات ومدونة بالوسوم وعدد المشاهدات والمشاريع والفريق والوظائف.',
+        ],
+        'description' => [
+            'en' => 'Nova-managed content API powering an organisation website. Pages are composed of reusable sections, and the blog supports categories, tags, authors, related posts and view tracking, with slug endpoints for static site generation.',
+            'ar' => 'واجهة محتوى تُدار من Nova لموقع منظمة. تتكون الصفحات من أقسام قابلة لإعادة الاستخدام، وتدعم المدونة التصنيفات والوسوم والكتّاب والمقالات المرتبطة وتتبع المشاهدات، مع روابط slugs لتوليد الموقع الثابت.',
+        ],
+        'features' => [
+            'en' => [
+                'Page builder with sliders, services, projects, team, partners, branches, careers and video sections',
+                'Blog with categories, tags, authors, related posts and view counts',
+                'Slug endpoints for blogs, categories and tags (static generation)',
+                'Careers, FAQs, testimonials, contacts, newsletter and SEO',
+            ],
+            'ar' => [
+                'منشئ صفحات بأقسام السلايدر والخدمات والمشاريع والفريق والشركاء والفروع والوظائف والفيديو',
+                'مدونة بالتصنيفات والوسوم والكتّاب والمقالات المرتبطة وعدد المشاهدات',
+                'روابط slugs للمقالات والتصنيفات والوسوم (لتوليد الموقع الثابت)',
+                'الوظائف والأسئلة الشائعة والشهادات والتواصل والنشرة البريدية وSEO',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'MySQL'],
+        'featured' => false,
+        'accent' => '#06B6D4',
+    ],
+    [
+        'slug' => 'mj-group',
+        'title' => ['en' => 'MJ Group', 'ar' => 'مجموعة MJ'],
+        'category' => ['en' => 'CMS', 'ar' => 'إدارة محتوى'],
+        'short' => [
+            'en' => 'Corporate group website CMS with product-category showcases, project and team categories, and branches.',
+            'ar' => 'نظام محتوى لموقع مجموعة شركات مع عرض فئات المنتجات وتصنيفات المشاريع والفريق والفروع.',
+        ],
+        'description' => [
+            'en' => 'Content API and Nova dashboard for a corporate group. On top of the shared page-builder core it adds product-category sections, best-products showcases, and categorised projects and team members.',
+            'ar' => 'واجهة محتوى ولوحة Nova لمجموعة شركات. تضيف فوق نواة منشئ الصفحات المشتركة أقسام فئات المنتجات وعرض أفضل المنتجات، وتصنيف المشاريع وأعضاء الفريق.',
+        ],
+        'features' => [
+            'en' => [
+                'Page builder with product-category and best-product sections',
+                'Projects and team members grouped by category',
+                'Branches, partners, services, careers and testimonials',
+                'Blog, FAQs, newsletter, legal policies and SEO',
+            ],
+            'ar' => [
+                'منشئ صفحات بأقسام فئات المنتجات وأفضل المنتجات',
+                'مشاريع وأعضاء فريق مجمّعون حسب التصنيف',
+                'الفروع والشركاء والخدمات والوظائف والشهادات',
+                'مدونة وأسئلة شائعة ونشرة بريدية وسياسات قانونية وSEO',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'MySQL'],
+        'featured' => false,
+        'accent' => '#A3A3A3',
+    ],
+    [
+        'slug' => 'ads-listing',
+        'title' => ['en' => 'Ads Listing', 'ar' => 'الإعلانات المبوبة'],
+        'category' => ['en' => 'Marketplace', 'ar' => 'سوق إلكتروني'],
+        'short' => [
+            'en' => 'Classified-ads platform for vehicles and parts with dynamic fields, company accounts, reviews and SEO.',
+            'ar' => 'منصة إعلانات مبوبة للمركبات وقطع الغيار مع حقول ديناميكية وحسابات الشركات والمراجعات وSEO.',
+        ],
+        'description' => [
+            'en' => 'The first version of the listings engine later reused by Shater and DealoHub: listings by type, category, brand and model with custom-field groups, user accounts that can be upgraded to companies, reviews, and a configurable home page with per-page SEO.',
+            'ar' => 'الإصدار الأول من محرك الإعلانات الذي أُعيد استخدامه لاحقاً في شاطر وديلو هب: إعلانات حسب النوع والتصنيف والماركة والموديل مع مجموعات حقول مخصصة، وحسابات مستخدمين يمكن ترقيتها إلى شركات، ومراجعات، وصفحة رئيسية قابلة للتخصيص مع SEO لكل صفحة.',
+        ],
+        'features' => [
+            'en' => [
+                'Listings with types, sub-categories, brands, models and custom-field groups',
+                'Account upgrade from individual to company, with company locations',
+                'Reviews for listings and clients, likes and favourites',
+                'Home-page sections, sliders and standalone SEO pages',
+            ],
+            'ar' => [
+                'إعلانات بالأنواع والتصنيفات الفرعية والماركات والموديلات ومجموعات الحقول المخصصة',
+                'ترقية الحساب من فرد إلى شركة مع مواقع الشركة',
+                'مراجعات للإعلانات والعملاء وإعجابات ومفضلة',
+                'أقسام الصفحة الرئيسية والسلايدر وصفحات SEO مستقلة',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'Sanctum', 'Spatie Permission'],
+        'featured' => false,
+        'accent' => '#FDBA74',
+    ],
+    [
+        'slug' => 'althanwia',
+        'title' => ['en' => 'Islamic Academy (Althanwia)', 'ar' => 'الأكاديمية الإسلامية (الثانوية)'],
+        'category' => ['en' => 'E-learning', 'ar' => 'تعليم إلكتروني'],
+        'short' => [
+            'en' => 'Online academy with live and offline courses, diplomas, exams, certificates, trainer sessions and Stripe invoicing.',
+            'ar' => 'أكاديمية إلكترونية بدورات مباشرة وغير مباشرة ودبلومات وامتحانات وشهادات وجلسات مدربين وفواتير Stripe.',
+        ],
+        'description' => [
+            'en' => 'Admin API (islamic-academy.org) plus a separate front-end app for an online Islamic academy. Students subscribe to diplomas and courses, attend scheduled online group lessons in meeting rooms, follow offline road maps, sit lesson and final exams, and receive certificates; payments are invoiced and collected through Stripe.',
+            'ar' => 'واجهة إدارة (islamic-academy.org) وتطبيق واجهة أمامية منفصل لأكاديمية إسلامية على الإنترنت. يشترك الطلاب في الدبلومات والدورات، ويحضرون حصصاً جماعية مجدولة في غرف الاجتماعات، ويتابعون خطط الدراسة الذاتية، ويقدّمون امتحانات الدروس والامتحانات النهائية، ويحصلون على الشهادات، وتُفوتر المدفوعات وتُحصّل عبر Stripe.',
+        ],
+        'features' => [
+            'en' => [
+                'Diplomas, online course groups with auto-generated lessons, and offline course road maps',
+                'Lesson and final exams with results and printable certificates',
+                'Trainer availability, session reservations, reminders and video-call rooms',
+                'Subscriptions per country and landing page, coupons and recalculated pricing',
+                'Invoices with Stripe checkout, finalised by a background job',
+                'Multimedia library, blog, events, ratings and Firebase notifications',
+            ],
+            'ar' => [
+                'دبلومات ومجموعات دورات مباشرة بدروس تُولّد تلقائياً وخطط دراسة للدورات غير المباشرة',
+                'امتحانات الدروس والامتحانات النهائية مع النتائج وشهادات قابلة للطباعة',
+                'أوقات المدربين المتاحة وحجز الجلسات والتذكيرات وغرف مكالمات الفيديو',
+                'اشتراكات حسب الدولة وصفحة الهبوط وكوبونات وإعادة حساب الأسعار',
+                'فواتير مع دفع Stripe تُستكمل عبر مهمة خلفية',
+                'مكتبة وسائط ومدونة وفعاليات وتقييمات وإشعارات Firebase',
+            ],
+        ],
+        'techs' => ['Laravel 9', 'Sanctum', 'Stripe', 'Firebase', 'Agora', 'Excel'],
+        'featured' => false,
+        'accent' => '#14B8A6',
+    ],
+    [
+        'slug' => 'luxsaray-offers',
+        'title' => ['en' => 'Luxsaray Offers', 'ar' => 'عروض لوكس سراي'],
+        'category' => ['en' => 'Sales tools', 'ar' => 'أدوات مبيعات'],
+        'short' => [
+            'en' => 'Price-quotation tool: staff build client offers from the product list and export them as PDF.',
+            'ar' => 'أداة عروض أسعار: يبني الموظفون عروض العملاء من قائمة المنتجات ويصدّرونها كملف PDF.',
+        ],
+        'description' => [
+            'en' => 'A small Nova application where sales staff create price offers for clients: they pick products with quantities and prices, the subtotals and service price are calculated, every change is attributed to the user who made it, and the offer is exported as a PDF quotation.',
+            'ar' => 'تطبيق Nova صغير يُنشئ فيه موظفو المبيعات عروض أسعار للعملاء: يختارون المنتجات بالكميات والأسعار، وتُحسب المجاميع الفرعية وسعر الخدمة، ويُنسب كل تعديل للمستخدم الذي قام به، ويُصدّر العرض كعرض سعر PDF.',
+        ],
+        'features' => [
+            'en' => [
+                'Products catalogue and client offers with line items (qty, price, subtotal)',
+                'Service price per offer and created-by / updated-by tracking',
+                'One-click PDF export of the quotation',
+            ],
+            'ar' => [
+                'كتالوج المنتجات وعروض العملاء ببنود (الكمية والسعر والمجموع الفرعي)',
+                'سعر الخدمة لكل عرض وتتبع من أنشأ وعدّل العرض',
+                'تصدير عرض السعر إلى PDF بضغطة واحدة',
+            ],
+        ],
+        'techs' => ['Laravel 11', 'Laravel Nova', 'PDF'],
+        'featured' => false,
+        'accent' => '#D946EF',
+    ],
+];

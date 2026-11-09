@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Abdulrahman Hijazi">
+  <title>AH — Abdulrahman Hijazi</title>
+  <defs><linearGradient id="ah-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6E7A8"/><stop offset=".45" stop-color="#C9A227"/><stop offset="1" stop-color="#8C6D15"/></linearGradient></defs>
+    <path d="M32 32 32 3 57 17.5Z" fill="#F1DC8C"/>
+    <path d="M32 32 57 17.5V46.5Z" fill="#C9A227"/>
+    <path d="M32 32 57 46.5 32 61Z" fill="#8C6D15"/>
+    <path d="M32 32 32 61 7 46.5Z" fill="#A9861E"/>
+    <path d="M32 32 7 46.5V17.5Z" fill="#D9B234"/>
+    <path d="M32 32 7 17.5 32 3Z" fill="#E6C65A"/>
+    <path d="M32 8 53 20v24L32 56 11 44V20Z" fill="#0E0E11" opacity=".9"/>
+    <path d="M17.5 21v22M46.5 21v22M25 43 32 19.5 39 43M17.5 35h29" fill="none" stroke="url(#ah-gold)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

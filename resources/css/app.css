@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../**/*.vue';
+
+@theme {
+    --font-sans: 'Inter', 'Cairo', 'Tajawal', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-arabic: 'Cairo', 'Tajawal', 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --color-gold-300: #e6c65a;
+    --color-gold-500: #C9A227;
+    --color-gold-700: #86691c;
+
+    --animate-fade-up: fade-up 0.7s ease-out both;
+
+    @keyframes fade-up {
+        from { opacity: 0; transform: translateY(24px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}
+
+/* Design tokens. Base colors (accent, bg, bg-2, text) come from Site Settings → Appearance
+   and are injected by app.blade.php; everything else is derived from them here. */
+:root {
+    --bg: #f7f5ef;
+    --bg-2: #ffffff;
+    --text: #17150f;
+    --accent: #C9A227;
+    --accent-soft: #8C6D15;
+    --accent-deep: #8C6D15;
+    --on-accent: #0a0a0b;
+
+    --bg-soft: color-mix(in srgb, var(--bg) 65%, var(--text) 3%);
+    --bg-3: color-mix(in srgb, var(--bg-2) 88%, var(--text));
+    --muted: color-mix(in srgb, var(--text) 68%, var(--bg));
+    --faint: color-mix(in srgb, var(--text) 45%, var(--bg));
+    --line: color-mix(in srgb, var(--text) 10%, transparent);
+    --line-soft: color-mix(in srgb, var(--text) 6%, transparent);
+    --line-strong: color-mix(in srgb, var(--text) 20%, transparent);
+    --overlay: color-mix(in srgb, var(--text) 4%, transparent);
+    --overlay-strong: color-mix(in srgb, var(--text) 8%, transparent);
+    --grid-line: color-mix(in srgb, var(--text) 4.5%, transparent);
+    --glow: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.dark {
+    --bg: #09090b;
+    --bg-2: #121215;
+    --text: #f4f1e8;
+    --accent: #C9A227;
+    --accent-soft: #E6C65A;
+    --accent-deep: #8C6D15;
+    --on-accent: #0a0a0b;
+    --bg-soft: color-mix(in srgb, var(--bg) 70%, var(--bg-2));
+    --bg-3: color-mix(in srgb, var(--bg-2) 90%, var(--text));
+    --muted: color-mix(in srgb, var(--text) 64%, var(--bg));
+    --faint: color-mix(in srgb, var(--text) 40%, var(--bg));
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.font-arabic {
+    font-family: 'Cairo', 'Tajawal', 'Inter', ui-sans-serif, system-ui, sans-serif !important;
+}
+
+[dir='rtl'] {
+    text-align: right;
+}
+
+::selection {
+    background: color-mix(in srgb, var(--accent) 35%, transparent);
+    color: inherit;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--bg-3); border-radius: 8px; border: 2px solid var(--bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+.animate-fade-up { animation: fade-up 0.7s ease-out both; }
+
+/* Scroll reveal (v-reveal directive) */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+.text-gold-gradient {
+    background: linear-gradient(120deg, color-mix(in srgb, var(--accent-soft) 45%, white) 0%, var(--accent) 40%, var(--accent-soft) 65%, var(--accent-deep) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 8s linear infinite;
+}
+:root:not(.dark) .text-gold-gradient {
+    background-image: linear-gradient(120deg, var(--accent-deep) 0%, color-mix(in srgb, var(--accent) 80%, black) 45%, var(--accent-deep) 100%);
+}
+@keyframes shine { to { background-position: 200% center; } }
+
+.gold-ring {
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent), 0 10px 50px -14px var(--glow);
+}
+
+/* Faint engineering grid behind sections */
+.bg-grid {
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+.glass {
+    background: color-mix(in srgb, var(--bg-2) 72%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+/* 3D tilt cards (v-tilt directive sets --rx / --ry / --mx / --my) */
+.tilt {
+    transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transform-style: preserve-3d;
+    transition: transform 0.25s ease-out, border-color 0.3s, box-shadow 0.3s;
+}
+.tilt .tilt-glare {
+    background: radial-gradient(400px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--card-accent, var(--accent)) 22%, transparent), transparent 45%);
+}
+.tilt .tilt-pop { transform: translateZ(30px); }
+
+.marquee { animation: marquee 40s linear infinite; }
+[dir='rtl'] .marquee { animation-direction: reverse; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .marquee, .text-gold-gradient { animation: none; }
+    .tilt { transform: none !important; }
+}

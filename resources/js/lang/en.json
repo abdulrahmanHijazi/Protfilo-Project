@@ -1,0 +1,137 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "skills": "Skills",
+        "projects": "Projects",
+        "education": "Education",
+        "certificates": "Certificates",
+        "contact": "Contact",
+        "experience": "Experience"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "available_for_work": "Available for work",
+        "not_available": "Currently busy",
+        "cta_projects": "Explore my work",
+        "cta_contact": "Hire me",
+        "download_cv": "Download CV",
+        "scroll_down": "Scroll down",
+        "years_experience": "Years experience",
+        "currently": "Currently at"
+    },
+    "stats": {
+        "projects": "Projects delivered",
+        "clients": "Happy clients",
+        "experience": "Years of experience",
+        "certificates": "Certificates",
+        "vega_projects": "Projects at Vega"
+    },
+    "about": {
+        "eyebrow": "About me",
+        "title": "Engineering backends that scale",
+        "download_cv": "Download CV",
+        "hire_me": "Hire me",
+        "info_title": "Personal info",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location"
+    },
+    "services": {
+        "eyebrow": "Services",
+        "title": "What I offer",
+        "subtitle": "Premium services tailored to your business goals."
+    },
+    "skills": {
+        "eyebrow": "Skills",
+        "title": "Technical skills",
+        "subtitle": "The stack I use to design, build and ship reliable backends.",
+        "languages_title": "Languages",
+        "categories": {
+            "backend": "Backend",
+            "database": "Databases",
+            "integrations": "Dashboards & integrations",
+            "frontend": "Frontend",
+            "mobile": "Mobile",
+            "tools": "Tools & practices"
+        }
+    },
+    "projects": {
+        "eyebrow": "Portfolio",
+        "title": "Projects I've built",
+        "subtitle": "Production platforms I built at Vega and beyond — filter by company.",
+        "view_project": "View project",
+        "view_all": "View all projects",
+        "live_demo": "Live demo",
+        "source_code": "Source code",
+        "back_to_projects": "Back to projects",
+        "technologies": "Technologies",
+        "empty": "No projects yet.",
+        "filter_all": "All",
+        "show_more": "Show {count} more",
+        "features": "Key features"
+    },
+    "education": {
+        "eyebrow": "Journey",
+        "title": "Education",
+        "subtitle": "My academic background."
+    },
+    "certificates": {
+        "eyebrow": "Credentials",
+        "title": "Certificates",
+        "subtitle": "Verified certifications and courses.",
+        "verify": "Verify",
+        "empty": "No certificates yet."
+    },
+    "languages": {
+        "title": "Languages",
+        "subtitle": "Languages I speak.",
+        "levels": {
+            "native": "Native",
+            "fluent": "Fluent",
+            "intermediate": "Intermediate",
+            "basic": "Basic"
+        }
+    },
+    "contact": {
+        "eyebrow": "Contact",
+        "title": "Let's work together",
+        "subtitle": "Tell me about your project — I usually reply within 24 hours.",
+        "name": "Your name",
+        "name_placeholder": "John Doe",
+        "email": "Your email",
+        "email_placeholder": "name{'@'}example.com",
+        "subject": "Subject",
+        "subject_placeholder": "Project inquiry",
+        "message": "Message",
+        "message_placeholder": "Hello, I'd like to discuss...",
+        "send_message": "Send message",
+        "sending": "Sending...",
+        "success": "Message sent successfully. I'll get back to you soon!",
+        "error": "Something went wrong. Please try again.",
+        "info_title": "Contact info",
+        "whatsapp": "Chat on WhatsApp"
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "made_with": "Built with Laravel, Filament, Vue & three.js",
+        "back_to_top": "Back to top"
+    },
+    "common": {
+        "toggle_theme": "Toggle theme",
+        "switch_language": "Switch language",
+        "open_menu": "Open menu",
+        "close_menu": "Close menu"
+    },
+    "experience": {
+        "eyebrow": "Career",
+        "title": "Work experience",
+        "subtitle": "Where I've built production systems.",
+        "present": "Present"
+    },
+    "scene": {
+        "drag_hint": "Drag to rotate",
+        "label": "Interactive 3D scene"
+    }
+}

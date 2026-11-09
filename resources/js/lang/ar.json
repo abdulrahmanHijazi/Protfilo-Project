@@ -1,0 +1,137 @@
+{
+    "nav": {
+        "home": "الرئيسية",
+        "about": "من أنا",
+        "services": "خدماتي",
+        "skills": "مهاراتي",
+        "projects": "أعمالي",
+        "education": "التعليم",
+        "certificates": "الشهادات",
+        "contact": "تواصل",
+        "experience": "الخبرات"
+    },
+    "hero": {
+        "greeting": "مرحباً، أنا",
+        "available_for_work": "متاح للعمل",
+        "not_available": "مشغول حالياً",
+        "cta_projects": "استكشف أعمالي",
+        "cta_contact": "وظّفني",
+        "download_cv": "تحميل السيرة الذاتية",
+        "scroll_down": "مرر للأسفل",
+        "years_experience": "سنوات خبرة",
+        "currently": "أعمل حالياً في"
+    },
+    "stats": {
+        "projects": "مشروع منجز",
+        "clients": "عميل سعيد",
+        "experience": "سنوات خبرة",
+        "certificates": "شهادات",
+        "vega_projects": "مشروع في Vega"
+    },
+    "about": {
+        "eyebrow": "من أنا",
+        "title": "أبني أنظمة خلفية قابلة للتوسع",
+        "download_cv": "تحميل السيرة الذاتية",
+        "hire_me": "وظّفني",
+        "info_title": "معلومات شخصية",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "location": "الموقع"
+    },
+    "services": {
+        "eyebrow": "خدماتي",
+        "title": "ماذا أقدم",
+        "subtitle": "خدمات مميزة مصممة لأهداف عملك."
+    },
+    "skills": {
+        "eyebrow": "المهارات",
+        "title": "المهارات التقنية",
+        "subtitle": "التقنيات التي أستخدمها لتصميم وبناء أنظمة خلفية موثوقة.",
+        "languages_title": "اللغات",
+        "categories": {
+            "backend": "الخلفية (Backend)",
+            "database": "قواعد البيانات",
+            "integrations": "لوحات التحكم والتكاملات",
+            "frontend": "الواجهات الأمامية",
+            "mobile": "الموبايل",
+            "tools": "الأدوات والممارسات"
+        }
+    },
+    "projects": {
+        "eyebrow": "معرض الأعمال",
+        "title": "مشاريع عملت عليها",
+        "subtitle": "منصات إنتاجية بنيتها في شركة Vega وغيرها — صنّفها حسب الشركة.",
+        "view_project": "عرض المشروع",
+        "view_all": "عرض كل المشاريع",
+        "live_demo": "عرض حي",
+        "source_code": "الكود المصدري",
+        "back_to_projects": "عودة للمشاريع",
+        "technologies": "التقنيات",
+        "empty": "لا توجد مشاريع بعد.",
+        "filter_all": "الكل",
+        "show_more": "عرض {count} أخرى",
+        "features": "أبرز الميزات"
+    },
+    "education": {
+        "eyebrow": "مسيرتي",
+        "title": "التعليم",
+        "subtitle": "خلفيتي الأكاديمية."
+    },
+    "certificates": {
+        "eyebrow": "الاعتمادات",
+        "title": "الشهادات",
+        "subtitle": "شهادات ودورات موثقة.",
+        "verify": "تحقق",
+        "empty": "لا توجد شهادات بعد."
+    },
+    "languages": {
+        "title": "اللغات",
+        "subtitle": "اللغات التي أتحدثها.",
+        "levels": {
+            "native": "اللغة الأم",
+            "fluent": "بطلاقة",
+            "intermediate": "متوسط",
+            "basic": "مبتدئ"
+        }
+    },
+    "contact": {
+        "eyebrow": "تواصل",
+        "title": "لنعمل معاً",
+        "subtitle": "أخبرني عن مشروعك — عادة أرد خلال ٢٤ ساعة.",
+        "name": "الاسم",
+        "name_placeholder": "محمد أحمد",
+        "email": "البريد الإلكتروني",
+        "email_placeholder": "name{'@'}example.com",
+        "subject": "الموضوع",
+        "subject_placeholder": "استفسار عن مشروع",
+        "message": "الرسالة",
+        "message_placeholder": "مرحباً، أود مناقشة...",
+        "send_message": "إرسال الرسالة",
+        "sending": "جارٍ الإرسال...",
+        "success": "تم إرسال رسالتك بنجاح. سأرد عليك قريباً!",
+        "error": "حدث خطأ ما. حاول مرة أخرى.",
+        "info_title": "معلومات التواصل",
+        "whatsapp": "دردشة واتساب"
+    },
+    "footer": {
+        "rights": "جميع الحقوق محفوظة.",
+        "made_with": "مبني بـ Laravel وFilament وVue وthree.js",
+        "back_to_top": "عودة للأعلى"
+    },
+    "common": {
+        "toggle_theme": "تبديل المظهر",
+        "switch_language": "تبديل اللغة",
+        "open_menu": "فتح القائمة",
+        "close_menu": "إغلاق القائمة"
+    },
+    "experience": {
+        "eyebrow": "المسيرة المهنية",
+        "title": "الخبرة المهنية",
+        "subtitle": "الأماكن التي بنيت فيها أنظمة إنتاجية.",
+        "present": "حتى الآن"
+    },
+    "scene": {
+        "drag_hint": "اسحب للتدوير",
+        "label": "مشهد ثلاثي الأبعاد تفاعلي"
+    }
+}
